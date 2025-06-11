@@ -10,7 +10,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 VECTOR_DB_PATH = "faiss_index"
 
-def create_vector_db():
+def create_vector_db(): #PDF 파일 읽어와서 chunk로 스플릿하고 vector db 생성
     loader = PyPDFLoader("news_weather.pdf")
     docs = loader.load()
     print(f"문서의 수: {len(docs)}")
