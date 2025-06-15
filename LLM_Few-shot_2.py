@@ -1,3 +1,5 @@
+# Few-shot에서 참고할 예제들 고정된 예제로 사용하기
+
 from langchain_core.prompts import ChatPromptTemplate, FewShotChatMessagePromptTemplate
 from langchain_community.llms import Ollama
 from langchain_core.output_parsers import StrOutputParser
